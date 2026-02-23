@@ -2,6 +2,7 @@ class Solution(object):
     def fizzBuzz(self, n):
         answer = []
 
+        // The order of the if statements matters.
         for i in range(1, n + 1):
             if i % 3 == 0 and i % 5 == 0:
                 answer.append("FizzBuzz")
@@ -11,5 +12,6 @@ class Solution(object):
                 answer.append("Buzz")
             else:
                 answer.append(str(i))
+
 
         return answer
